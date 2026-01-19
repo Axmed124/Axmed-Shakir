@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bog Tijaabo - Teknoolojiyad</title>
+    <link rel="stylesheet" href="j.css" />
+    <script src="j.script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Ku soo dhawaaw Bogeyga</h1>
+            <div class="controls">
+                <button id="themeToggle" aria-pressed="false" title="Toggle dark mode">Mawduuc</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Waa bog tijaabo ah oo ku qoran afka Soomaaliga</h2>
+            <p>Waxaan diyaarinaa nuucyo kala duwan oo teknoolojiyad ah — HTML, CSS, JavaScript, Python, Java, iyo C++.</p>
+        </section>
+
+        <section>
+            <h3>Sawirrada Teknoolojiyadda</h3>
+            <div class="sawir" id="gallery">
+                <figure>
+                    <img src="sawir/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo" loading="lazy" data-caption="HTML5" data-link="html.html"/>
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure>
+                    <img src="sawir/CSS3_logo.svg.png" alt="CSS3 logo" loading="lazy" data-caption="CSS3" data-link="css.html"/>
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure>
+                    <img src="sawir/Python-logo-notext.svg.png" alt="Python logo" loading="lazy" data-caption="Python" data-link="python.html"/>
+                    <figcaption>Python</figcaption>
+                </figure>
+                <figure>
+                    <img src="sawir/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript logo" loading="lazy" data-caption="JavaScript" data-link="javascript.html"/>
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content">
+            <h3>Qaybta Macluumaadka</h3>
+            <p>Halkan waxaad ka heli kartaa macluumaad dheeraad ah oo ku saabsan teknoolojiyada casriga ah iyo sida loo isticmaalo.</p>
+        </section>
+    </main>
+
+    <!-- Modal for image preview -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <button class="modal-close" id="modalClose" aria-label="Close preview">&times;</button>
+        <div class="modal-body" role="dialog" aria-modal="true">
+            <img id="modalImg" src="" alt="" />
+            <p id="modalCaption"></p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; 2025 — Bog Tijaabo</small>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
